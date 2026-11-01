@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inai — Partners in AI</title>
+    <meta
+      name="description"
+      content="Inai is an AI consulting partner. We help organisations go from AI strategy to production — GenAI, agents, data & ML engineering, and responsible AI."
+    />
+    <meta name="theme-color" content="#0b0d12" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+Tamil:wght@500&family=Space+Grotesk:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <!-- SVG gradient defs shared by icons -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <defs>
+        <linearGradient id="g-brand" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#7c5cff" />
+          <stop offset="1" stop-color="#2dd4bf" />
+        </linearGradient>
+        <!-- Inai "bridge" mark: two i's (partners) joined by an arc -->
+        <g id="mark-bridge">
+          <path d="M15 12 Q24 -1 33 12" stroke="url(#g-brand)" stroke-width="3" stroke-linecap="round" fill="none" />
+          <rect x="12" y="20" width="6" height="20" rx="3" fill="currentColor" />
+          <rect x="30" y="20" width="6" height="20" rx="3" fill="currentColor" />
+          <circle cx="15" cy="12" r="4" fill="#7c5cff" />
+          <circle cx="33" cy="12" r="4" fill="#2dd4bf" />
+        </g>
+      </defs>
+    </svg>
+
+    <!-- ================= NAV ================= -->
+    <header class="nav" id="nav">
+      <div class="container nav__inner">
+        <a href="#top" class="logo" aria-label="Inai home">
+          <svg viewBox="8 2 32 38" fill="none" aria-hidden="true">
+            <use href="#mark-bridge" />
+          </svg>
+          <span>inai</span>
+        </a>
+
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="btn btn--primary nav__cta">Let's talk</a></li>
+        </ul>
+
+        <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M4 7h16M4 12h16M4 17h16" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ================= HERO ================= -->
+      <section class="hero">
+        <div class="glow glow--violet" aria-hidden="true"></div>
+        <div class="glow glow--teal" aria-hidden="true"></div>
+
+        <div class="container">
+          <span class="eyebrow reveal"><span class="eyebrow__dot"></span>AI consulting · Strategy to production</span>
+
+          <h1 class="reveal">
+            Partners in <span class="gradient-text">AI</span>
+          </h1>
+
+          <p class="hero__sub reveal">
+            We work alongside your team to find where AI creates real value, then design, build and scale it —
+            securely, responsibly, and with measurable outcomes.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a href="#contact" class="btn btn--primary">
+              Book a discovery call
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+            <a href="#services" class="btn btn--ghost">Explore services</a>
+          </div>
+
+          <div class="hero__stack reveal">
+            <span class="hero__stack-label">We build with</span>
+            <div class="hero__stack-list">
+              <span>AWS</span>
+              <span>Azure</span>
+              <span>Google Cloud</span>
+              <span>Anthropic</span>
+              <span>OpenAI</span>
+              <span>Databricks</span>
+              <span>Snowflake</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SERVICES ================= -->
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="kicker gradient-text">What we do</span>
+            <h2>End-to-end AI, delivered as a partnership</h2>
+            <p>From the first workshop to a system running in production, we stay with you at every step.</p>
+          </div>
+
+          <div class="grid grid--2">
+            <article class="card reveal">
+              <div class="card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9" /><path d="m15.5 8.5-2 5-5 2 2-5z" /></svg>
+              </div>
+              <h3>AI Strategy &amp; Advisory</h3>
+              <p>Cut through the noise. We identify the use cases that matter, size the value, and build a roadmap your leadership can act on.</p>
+              <ul class="card__list">
+                <li>AI readiness assessment</li>
+                <li>Use-case discovery &amp; prioritisation</li>
+                <li>Business case &amp; ROI modelling</li>
+              </ul>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3" /><rect x="7" y="7" width="10" height="10" rx="2" /><path d="M10 12h4" /></svg>
+              </div>
+              <h3>GenAI &amp; Agent Builds</h3>
+              <p>Production-grade generative AI — not demos. Copilots, knowledge assistants and autonomous agents wired into your workflows.</p>
+              <ul class="card__list">
+                <li>RAG &amp; enterprise knowledge search</li>
+                <li>AI agents &amp; workflow automation</li>
+                <li>Evaluation, guardrails &amp; LLMOps</li>
+              </ul>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="7" ry="3" /><path d="M5 6v6c0 1.7 3.1 3 7 3s7-1.3 7-3V6" /><path d="M5 12v6c0 1.7 3.1 3 7 3s7-1.3 7-3v-6" /></svg>
+              </div>
+              <h3>Data &amp; ML Engineering</h3>
+              <p>AI is only as good as its data. We build the platforms, pipelines and MLOps foundations that make models reliable at scale.</p>
+              <ul class="card__list">
+                <li>Modern data platforms on cloud</li>
+                <li>Model development &amp; deployment</li>
+                <li>MLOps, monitoring &amp; cost control</li>
+              </ul>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6z" /><path d="m9 12 2 2 4-4" /></svg>
+              </div>
+              <h3>Training &amp; Governance</h3>
+              <p>Make AI stick. We upskill your people and put the policies and controls in place so AI is adopted safely and confidently.</p>
+              <ul class="card__list">
+                <li>Executive &amp; team AI training</li>
+                <li>Responsible AI frameworks</li>
+                <li>Security, privacy &amp; compliance</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= APPROACH ================= -->
+      <section class="section section--alt" id="approach">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="kicker gradient-text">How we work</span>
+            <h2>A clear path from idea to impact</h2>
+            <p>Short, focused phases with a tangible outcome at the end of each — so you see value early and often.</p>
+          </div>
+
+          <div class="steps">
+            <div class="step reveal">
+              <span class="step__num">01</span>
+              <h3>Discover</h3>
+              <p>Workshops with your teams to map processes, data and pain points, and surface high-value opportunities.</p>
+              <span class="step__time">1–2 weeks</span>
+            </div>
+            <div class="step reveal">
+              <span class="step__num">02</span>
+              <h3>Design</h3>
+              <p>Architecture, success metrics and a rapid prototype that proves feasibility before you invest further.</p>
+              <span class="step__time">2–4 weeks</span>
+            </div>
+            <div class="step reveal">
+              <span class="step__num">03</span>
+              <h3>Build</h3>
+              <p>Iterative delivery of a secure, tested solution integrated with your systems and evaluated against real data.</p>
+              <span class="step__time">6–12 weeks</span>
+            </div>
+            <div class="step reveal">
+              <span class="step__num">04</span>
+              <h3>Scale</h3>
+              <p>Rollout, monitoring and enablement — then handover, or ongoing partnership as you expand.</p>
+              <span class="step__time">Ongoing</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= INDUSTRIES ================= -->
+      <section class="section">
+        <div class="container">
+          <div class="section__head section__head--center reveal">
+            <span class="kicker gradient-text">Industries</span>
+            <h2>Built for the way your sector works</h2>
+          </div>
+          <div class="chips reveal">
+            <span class="chip">Financial Services</span>
+            <span class="chip">Healthcare &amp; Life Sciences</span>
+            <span class="chip">Retail &amp; E-commerce</span>
+            <span class="chip">Manufacturing</span>
+            <span class="chip">Telecom</span>
+            <span class="chip">Energy &amp; Utilities</span>
+            <span class="chip">Public Sector</span>
+            <span class="chip">Logistics</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= WORK / OUTCOMES ================= -->
+      <!-- NOTE: placeholder figures and case studies — replace with real ones before launch. -->
+      <section class="section section--alt" id="work">
+        <div class="container">
+          <div class="section__head reveal">
+            <span class="kicker gradient-text">Outcomes</span>
+            <h2>AI that pays for itself</h2>
+            <p>A snapshot of the kind of results we aim for with our clients.</p>
+          </div>
+
+          <div class="stats">
+            <div class="stat reveal">
+              <div class="stat__value gradient-text" data-count="40" data-suffix="%">0%</div>
+              <div class="stat__label">Faster case handling</div>
+            </div>
+            <div class="stat reveal">
+              <div class="stat__value gradient-text" data-count="3" data-suffix="×">0×</div>
+              <div class="stat__label">Analyst productivity</div>
+            </div>
+            <div class="stat reveal">
+              <div class="stat__value gradient-text" data-count="12" data-suffix=" wks">0 wks</div>
+              <div class="stat__label">Idea to production</div>
+            </div>
+            <div class="stat reveal">
+              <div class="stat__value gradient-text" data-count="60" data-suffix="%">0%</div>
+              <div class="stat__label">Lower support costs</div>
+            </div>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="card reveal">
+              <span class="case__tag">Financial Services</span>
+              <h3>Document intelligence for lending</h3>
+              <p>An extraction and review agent that reads loan applications, flags risk and drafts summaries for underwriters.</p>
+              <div class="case__result">Review time cut from days to hours</div>
+            </article>
+            <article class="card reveal">
+              <span class="case__tag">Retail</span>
+              <h3>Customer support copilot</h3>
+              <p>A RAG assistant grounded in product and policy data, handing off seamlessly to human agents when needed.</p>
+              <div class="case__result">Majority of tier-1 queries self-served</div>
+            </article>
+            <article class="card reveal">
+              <span class="case__tag">Manufacturing</span>
+              <h3>Predictive maintenance platform</h3>
+              <p>Sensor data pipelines and ML models that forecast equipment failure and schedule maintenance proactively.</p>
+              <div class="case__result">Unplanned downtime significantly reduced</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+      <section class="section" id="about">
+        <div class="container about">
+          <div class="about__visual reveal" aria-hidden="true">
+            <svg viewBox="0 0 200 200" fill="none" class="bridge-art">
+              <path d="M40 160 H160" stroke="#ffffff" stroke-opacity="0.06" />
+              <path class="bridge-art__arc" d="M70 62 Q100 10 130 62" stroke="url(#g-brand)" stroke-width="6" stroke-linecap="round" pathLength="1" />
+              <rect x="61" y="88" width="18" height="72" rx="9" fill="#e8eaf0" />
+              <rect x="121" y="88" width="18" height="72" rx="9" fill="#e8eaf0" />
+              <circle cx="70" cy="62" r="12" fill="#7c5cff" />
+              <circle cx="130" cy="62" r="12" fill="#2dd4bf" />
+            </svg>
+            <div class="about__word"><strong><span class="tamil" lang="ta">இணை</span> · inai</strong> — to join, to partner</div>
+          </div>
+
+          <div>
+            <span class="kicker gradient-text reveal">Why Inai</span>
+            <h2 class="reveal">We don't hand over a deck and leave.</h2>
+            <p class="reveal">
+              <em>Inai</em> means to join together. That's how we work — as an extension of your team, sharing the
+              goal and the accountability, not just the advice.
+            </p>
+            <p class="reveal">
+              Our consultants and engineers have shipped AI in demanding, regulated environments. We bring that
+              experience, and leave your team stronger than we found it.
+            </p>
+
+            <ul class="values">
+              <li class="reveal">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+                <div><strong>Outcome-first</strong><span>Every engagement starts with a measurable business goal.</span></div>
+              </li>
+              <li class="reveal">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+                <div><strong>Vendor-neutral</strong><span>We pick the right models and cloud for you — not for a reseller margin.</span></div>
+              </li>
+              <li class="reveal">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5" /></svg>
+                <div><strong>Responsible by design</strong><span>Security, privacy and evaluation are built in from day one.</span></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT ================= -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="contact reveal">
+            <div class="glow glow--violet" aria-hidden="true"></div>
+
+            <div class="contact__intro">
+              <span class="kicker gradient-text">Get in touch</span>
+              <h2>Let's build what's next, together.</h2>
+              <p>Tell us a little about your goals. We'll come back within one business day to set up a free 30-minute discovery call.</p>
+
+              <div class="contact__meta">
+                <a href="mailto:hello@inai.ai">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
+                  hello@inai.ai
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3" /><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7" /></svg>
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+
+            <form class="form" id="contact-form" novalidate>
+              <div class="form__row">
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div class="field">
+                  <label for="email">Work email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="field">
+                  <label for="company">Company</label>
+                  <input id="company" name="company" type="text" autocomplete="organization" />
+                </div>
+                <div class="field">
+                  <label for="interest">Interested in</label>
+                  <select id="interest" name="interest">
+                    <option>AI Strategy &amp; Advisory</option>
+                    <option>GenAI &amp; Agent Builds</option>
+                    <option>Data &amp; ML Engineering</option>
+                    <option>Training &amp; Governance</option>
+                    <option>Not sure yet</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <label for="message">What are you hoping to achieve?</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary">
+                Send message
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </button>
+              <p class="form__note" id="form-note">We'll never share your details.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div>
+            <a href="#top" class="logo" aria-label="Inai home">
+              <svg viewBox="8 2 32 38" fill="none" aria-hidden="true">
+                <use href="#mark-bridge" />
+              </svg>
+              <span>inai</span>
+            </a>
+            <p class="footer__tagline">Inai — Partners in AI</p>
+          </div>
+
+          <div class="footer__cols">
+            <div class="footer__col">
+              <h4>Services</h4>
+              <ul>
+                <li><a href="#services">Strategy &amp; Advisory</a></li>
+                <li><a href="#services">GenAI &amp; Agents</a></li>
+                <li><a href="#services">Data &amp; ML</a></li>
+                <li><a href="#services">Training &amp; Governance</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#approach">Approach</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <span>© <span id="year">2026</span> Inai. All rights reserved.</span>
+          <span>Partners in AI</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
